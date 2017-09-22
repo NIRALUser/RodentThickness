@@ -289,7 +289,7 @@ def perform_analysis(opts, config, csvdata, outputDir, corr_opt="initial_dense")
         datafiles.append((group, datafilename))
 
     # perform statistical analysis
-    rscriptExePath = config["RScriptPath"]
+    rscriptExePath = config["RscriptPath"]
     rscriptPath = os.path.dirname(os.path.abspath(__file__)) + "/rodentThicknessStats.r"
     if (corr_opt == "initial_dense"):
         outputfile = "%s/stats.initialDenseSampling.txt" % statDir
